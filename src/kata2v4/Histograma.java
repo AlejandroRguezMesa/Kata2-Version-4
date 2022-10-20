@@ -13,11 +13,11 @@ public class Histograma<T> {
         return data;
     }
     public Map<T,Integer> getHistogram(){
-        Map<T, Integer> histogram = new HashMap<>();
+        Map<T, Integer> histo = new HashMap<>();
         for (T i:data){
-            histogram.put(i, histogram.containsKey(i)? histogram.get(i) + 1:1);
+            histo.put(i, histo.containsKey(i)? histo.get(i) + 1:1);
         }
-        return histogram;
+        return histo;
     
     
 }
